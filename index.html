@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alkosto Hypersaving | Proudly Colombian</title>
+    <title>Alkosto Hiperahorro | Orgullosamente Colombiano</title>
     <link rel="shortcut icon" href="./images/alkosto_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header class="top_bar">
-        <div class="alkosto_logo">
+    <header class="header">
+        <div class="header__logo">
             <img src="./images/alkosto_logo.png" alt="alkosto_logo">
         </div>
-        <div class="header_search">
-            <input type="text" placeholder="What are you looking for today?">
+        <div class="header__search">
+            <input type="text" class="header__search-input" placeholder="¿Qué buscas hoy?">
         </div>
-        <div class="header_link_list">
+        <div class="header__links">
             <ul>
-                <a href="#">Hypersaving</a><i class="offer_icon"><img src="./images/offer.png" alt="offer_icon"></i>
-                <a href="#">Sales: (601) 746 8001</a>
-                <a href="#">Services: (601) 407 3033</a>
-                <a href="#">Follow your order</a>
-                <a href="#">Our Shops</a>
-                <a href="#">Catalogue</a>
-                <a href="#">Help</a>
+                <a href="#" class="header__link">Hiperahorro</a>
+                <i class="header__link-icon">
+                    <img src="./images/offer.png" alt="offer_icon">
+                </i>
+                <a href="#" class="header__link">Ventas: (601) 746 8001</a>
+                <a href="#" class="header__link">Servicio: (601) 407 3033</a>
+                <a href="#" class="header__link">Sigue tu pedido</a>
+                <a href="#" class="header__link">Nuestras tiendas</a>
+                <a href="#" class="header__link">Catálogo</a>
+                <a href="#" class="header__link">Ayuda</a>
             </ul>
         </div>
-        <div class="primary_icons">
-            <a href="#" class="user_icon">My account<img src="./images/user_icon.png" alt="user_icon"></a>
-            <a href="#" class="cart_icon">My Shopping Cart<img src="./images/shop_cart.png" alt="user_icon"></a>
+        <div class="header__primary-icons">
+            <a href="#" class="header__primary-icon header__primary-icon--user">
+                <span class="header__primary-icon-text">Mi cuenta</span>
+                <img src="./images/user_icon.png" alt="user_icon" class="header__primary-icon-image">
+            </a>
+            <a href="#" class="header__primary-icon header__primary-icon--cart">
+                <span class="header__primary-icon-text">Mi carrito</span>
+                <img src="./images/shop_cart.png" alt="user_icon" class="header__primary-icon-image">
+            </a>
         </div>
     </header>
 
-    <nav class="main_nav">
-        <ul>
-            <a href="#">Cellphones</a>
-            <a href="#">Computers</a>
-            <a href="#">Appliances</a>
-            <a href="#">TV</a>
-            <a href="#">Accesories</a>
-            <a href="#">VideoGames</a>
-            <a href="#">Audio</a>
-            <a href="#">Cameras</a>
-            <a href="#">Pins</a>
-            <a href="#">Home</a>
-            <a href="#">Smart Home</a>
-            <a href="#">Sports</a>
-            <a href="#">Tires and Bikes</a>
-            <a href="#">Toys</a>
-            <a href="#">Others</a>
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <a href="#" class="main-nav__item">Celulares</a>
+            <a href="#" class="main-nav__item">Computadores</a>
+            <a href="#" class="main-nav__item">Electrodómesticos</a>
+            <a href="#" class="main-nav__item">TV</a>
+            <a href="#" class="main-nav__item">Accesorios</a>
+            <a href="#" class="main-nav__item">Videojuegos</a>
+            <a href="#" class="main-nav__item">Audio</a>
+            <a href="#" class="main-nav__item">Cámaras</a>
+            <a href="#" class="main-nav__item">Pines</a>
+            <a href="#" class="main-nav__item">Hogar</a>
+            <a href="#" class="main-nav__item">Casa Inteligente</a>
+            <a href="#" class="main-nav__item">Deportes</a>
+            <a href="#" class="main-nav__item">Llantas y Motos</a>
+            <a href="#" class="main-nav__item">Juguetes</a>
+            <a href="#" class="main-nav__item">Otros</a>
         </ul>
     </nav>
 
     <main>
         <section class="hero">
-            <div class="promo-box">
+            <div class="hero__promo-box">
             </div>
         </section>
     </main>
