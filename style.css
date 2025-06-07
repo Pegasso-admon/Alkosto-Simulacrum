@@ -1,53 +1,57 @@
-/* General Body Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    /* A common, clean font */
     color: #333;
-    /* Dark grey for general text */
     line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    /* Remove underline from links */
     color: inherit;
-    /* Inherit color from parent for most links, can be overridden */
 }
 
 ul {
     list-style: none;
-    /* Remove bullet points from lists */
     padding: 0;
     margin: 0;
 }
 
-img {
-    max-width: 100%;
-    /* Ensure images are responsive */
-    height: auto;
-}
-
-/* Header Block Styles */
-.header {
+.header__container {
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -ms-flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -ms-justify-content: space-between;
+    -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #f7f7f7;
-    /* Light grey background for the header */
-    border-bottom: 1px solid #eee;
-    /* Subtle bottom border */
+    -ms-flex-pack: justify;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    width: 100%
 }
 
-.header__logo img {
-    height: 40px;
-    /* Adjust as needed */
+.header__primary-nav-top {
+    background: #004797;
+    padding: 0;
+    z-index: 6;
+    position: relative
+}
+
+.header__logo {
+    height: 96px;
+    max-height: 96px;
+    max-width: 221px;
+    width: 221px;
 }
 
 .header__search {
     flex-grow: 1;
-    /* Allow search bar to take available space */
     margin: 0 20px;
 }
 
@@ -56,51 +60,55 @@ img {
     padding: 8px 15px;
     border: 1px solid #ddd;
     border-radius: 20px;
-    /* Rounded corners for the search input */
     font-size: 14px;
 }
 
 .header__links ul {
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-box;
     display: flex;
-    gap: 15px;
-    /* Space between the top links */
-    font-size: 13px;
+    -ms-fldex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0
 }
 
-.header__link {
-    display: flex;
-    align-items: center;
-    color: #555;
-    white-space: nowrap;
-    /* Prevent links from wrapping */
+.header__link li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 12px;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center
 }
 
-.header__link-icon img {
+.header__link-icon {
+    width: 16px;
     height: 16px;
-    /* Adjust icon size */
-    margin-right: 5px;
 }
 
 .header__primary-icons {
     display: flex;
     gap: 20px;
-    /* Space between "Mi cuenta" and "Mi carrito" */
     margin-left: 20px;
 }
 
 .header__primary-icon {
     display: flex;
     flex-direction: column;
-    /* Stack icon and text vertically */
     align-items: center;
     font-size: 12px;
-    color: #555;
+    color: #fff;
     text-align: center;
 }
 
 .header__primary-icon-image {
     height: 24px;
-    /* Adjust icon size */
     margin-bottom: 3px;
 }
 
@@ -164,5 +172,5 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    
+
 }
